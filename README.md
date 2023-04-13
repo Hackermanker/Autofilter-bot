@@ -1,9 +1,3 @@
-## Deploy to Heroku 
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Hackermanker/Autofilter-bot)
-<p align="center">
-  <img src="assets/logo.jpg" alt="Eva Maria Logo">
-</p>
 <h1 align="center">
   <b>Autofilter-bot</b>
 </h1>
@@ -18,19 +12,20 @@ The base repo is of TeamEvamaria and remembering their immense hardwork for Evam
 
 ## Features
 
-- [x] Auto Filter
-- [x] Manual Filter
-- [x] IMDB
-- [x] Admin Commands
-- [x] Broadcast
-- [x] Index
-- [x] IMDB search
-- [x] Inline Search
-- [x] Random pics
-- [x] ids and User info 
-- [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
-- [x] Spelling Check Feature
-- [x] File Store
+- • Auto Filter
+- • Manual Filter
+- • Forcesub to Request Channels and groups
+- • IMDB
+- • Admin Commands
+- • Broadcast
+- • Index
+- • IMDB search
+- • Inline Search
+- • Random pics
+- • ids and User info 
+- • Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
+- • Spelling Check Feature
+- • File Store
 ## Variables
 
 Read [this](https://telegram.dog/TeamEvamaria/12) before you start messing up with your edits.

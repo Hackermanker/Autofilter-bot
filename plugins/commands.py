@@ -24,15 +24,15 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('𝗨𝗣𝗗𝗔𝗧𝗘𝗦🔖', url='https://t.me/movies_channel_malayalam')
+                InlineKeyboardButton('Updates📊', url='https://t.me/Astra_botz')
             ],
             [
-                InlineKeyboardButton('𝗛𝗘𝗟𝗣⚙️', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('Help⚙️', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
-        await asyncio.sleep(2) # 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
+        await asyncio.sleep(2) # 😢 https://github.com/Hackermanker/Autofilter-bot/blob/master/plugins/p_ttishow.py#L17 wait a bit, before checking.
         if not await db.get_chat(message.chat.id):
             total=await client.get_chat_members_count(message.chat.id)
             await client.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, "Unknown"))       
@@ -43,13 +43,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗨𝗥 𝗚𝗥𝗢𝗨𝗣𝗦➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('Add me to your group➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('𝗨𝗣𝗗𝗔𝗧𝗘𝗦🔖', url='https://t.me/movies_channel_malayalam'),
-            InlineKeyboardButton('𝗠𝗢𝗩𝗜𝗘𝗦🔎', url='https://t.me/+cZQmduIduzwzZDY1')
+            InlineKeyboardButton('Updates📊', url='https://t.me/Astra_botz'),
+            InlineKeyboardButton('Inline🔎', url='https://t.me/')
             ],[      
-            InlineKeyboardButton('𝗛𝗘𝗟𝗣⚙️', callback_data='help'),
-            InlineKeyboardButton('𝗔𝗕𝗢𝗨𝗧📚', callback_data='about')
+            InlineKeyboardButton('Help⚙️', callback_data='help'),
+            InlineKeyboardButton('About📚', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -66,13 +66,13 @@ async def start(client, message):
             return
 
         buttons = [[
-            InlineKeyboardButton('➕𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗨𝗥 𝗚𝗥𝗢𝗨𝗣𝗦➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('Add me to your groups➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('𝗨𝗣𝗗𝗔𝗧𝗘𝗦🔖', url='https://t.me/movies_channel_malayalam'),
-            InlineKeyboardButton('𝗠𝗢𝗩𝗜𝗘𝗦🔎', url='https://t.me/+cZQmduIduzwzZDY1')
+            InlineKeyboardButton('Updates📊', url='https://t.me/Astra_botz'),
+            InlineKeyboardButton('Inline🔎', url='https://t.me/+cZQmduIduzwzZDY1')
             ],[
-            InlineKeyboardButton('𝗛𝗘𝗟𝗣⚙️', callback_data='help'),
-            InlineKeyboardButton('𝗔𝗕𝗢𝗨𝗧📚', callback_data='about')
+            InlineKeyboardButton('Help⚙️', callback_data='help'),
+            InlineKeyboardButton('About📚', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(

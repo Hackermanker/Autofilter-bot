@@ -88,9 +88,9 @@ async def next_page(bot, query):
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f'📟 Files: {len(files)}', 'dupe'),
-            InlineKeyboardButton(f'🎁 Tips', 'tips'),
-            InlineKeyboardButton(f'📮 Info', 'info')
+            InlineKeyboardButton(f'🧮 Files: {len(files)}', 'dupe'),
+            InlineKeyboardButton(f'📝 Tips', 'tips'),
+            InlineKeyboardButton(f'📚 Info', 'info')
         ]
     )
 
@@ -106,14 +106,14 @@ async def next_page(bot, query):
             
             [
                 
-             InlineKeyboardButton("⏪ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}")]
+             InlineKeyboardButton("🔙", callback_data=f"next_{req}_{key}_{off_set}")]
         )
         btn.append(
             
             
             [
                 
-             InlineKeyboardButton(f"ᴍᴏʀᴇ ᴩᴀɢᴇꜱ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ😢",callback_data="pages")]
+             InlineKeyboardButton(f"No more pages available",callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
@@ -425,13 +425,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗨𝗥 𝗚𝗥𝗢𝗨𝗣𝗦➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('Add me to your group➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('𝗨𝗣𝗗𝗔𝗧𝗘𝗦🔖', url='https://t.me/movies_channel_malayalam'),
-            InlineKeyboardButton('𝗠𝗢𝗩𝗜𝗘𝗦🔎', url='https://t.me/+cZQmduIduzwzZDY1')
+            InlineKeyboardButton('Updates📊', url='https://t.me/Astra_botz'),
+            InlineKeyboardButton('Inline🔎', url='https://t.me/+cZQmduIduzwzZDY1')
             ],[      
-            InlineKeyboardButton('𝗛𝗘𝗟𝗣⚙️', callback_data='help'),
-            InlineKeyboardButton('𝗔𝗕𝗢𝗨𝗧📚', callback_data='about')
+            InlineKeyboardButton('Help⚙️', callback_data='help'),
+            InlineKeyboardButton('About📚', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(

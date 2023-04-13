@@ -8,13 +8,10 @@
   <b>Autofilter-bot</b>
 </h1>
 
-
-[![Size](https://img.shields.io/github/repo-size/Hackermanker/Autofilter-bot?style=flat-square&color=green)](https://github.com/Hackermanker/Autofilter-bot/)
-
 <p align="center">
-<h4 align="center">
+<h2 align="center">
     <i>Credits🔖</i>
-</h4>
+</h2>
 The base repo is of TeamEvamaria and remembering their immense hardwork for EvamariaTG.
 </p>
   

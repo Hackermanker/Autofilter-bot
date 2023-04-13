@@ -1,5 +1,5 @@
 {
-    "name": "EvaMariaBot",
+    "name": "Autofilter-bot",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "stack": "container",
     "keywords": [
@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/EvamariaTG/EvaMaria",
-    "repository": "https://github.com/Hackermanker/reqrepo",
+    "website": "https://github.com/Hackermanker/Autofilter-bot",
+    "repository": "https://github.com/Hackermanker/Autofilter-bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -50,8 +50,8 @@
             "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
             "required": false
         },
-        "AUTH_CHANNEL": {
-            "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
+        "REQ_CHANNEL": {
+            "description": "ID of channel for forcesub.Make sure bot is admin in this channel. Without requesting to join this channel users cannot use bot.",
             "required": false
         },
         "DATABASE_URI": {
